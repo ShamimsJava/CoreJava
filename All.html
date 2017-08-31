@@ -1,0 +1,1438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Shamim.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced; font-weight: bold}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced; font-weight: bold}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced; font-weight: bold}
+.string {color: #ce7b00}
+.literal {color: #0000e6}
+.comment {color: #969696}
+.ST2 {color: #009900}
+.ST0 {font-family: Monospaced; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Monospaced; font-weight: bold; font-style: italic}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">D:\IDB-BISEW\Git_CoreJava\CoreJava\test\Shamim.java</td></tr></table>
+<pre>
+<span class="comment">// Md. Shamim Sarker. IDB-BISEW, ESAD-J2EE, Round-33</span>
+<span class="literal">class</span> Simple {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Hello Java</span><span class="string">&quot;</span>);
+    }
+}
+<span class="comment">//------------------------------------------------------//</span>
+
+<span class="literal">class</span> IfExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> age = 20;
+        <span class="literal">if</span> (age &gt; 18) {
+            System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">Age is greater than 18</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//------------------------------------------------------//</span>
+
+<span class="literal">class</span> IfElseExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> number = 13;
+        <span class="literal">if</span> (number % 2 == 0) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">even number</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">odd number</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> IfElseIfExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> marks = 65;
+
+        <span class="literal">if</span> (marks &lt; 50) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">fail</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (marks &gt;= 50 &amp;&amp; marks &lt; 60) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">D grade</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (marks &gt;= 60 &amp;&amp; marks &lt; 70) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">C grade</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (marks &gt;= 70 &amp;&amp; marks &lt; 80) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">B grade</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (marks &gt;= 80 &amp;&amp; marks &lt; 90) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A grade</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (marks &gt;= 90 &amp;&amp; marks &lt; 100) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A+ grade</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Invalid!</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> SwitchExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> number = 20;
+        <span class="literal">switch</span> (number) {
+            <span class="literal">case</span> 10:
+                System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">10</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 20:
+                System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">20</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 30:
+                System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">30</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">default</span>:
+                System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Not in 10, 20 or 30</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//-----------------------------------------------------------//</span>
+
+<span class="literal">class</span> ForExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 10; i++) {
+            System.<span class="ST1">out</span>.println(i);
+        }
+    }
+}
+<span class="comment">//-----------------------------------------------------------//</span>
+
+<span class="literal">class</span> ForEachExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> arr[] = {12, 23, 44, 56, 78};
+        <span class="literal">for</span> (<span class="literal">int</span> i : arr) {
+            System.<span class="ST1">out</span>.println(i);
+        }
+    }
+}
+<span class="comment">//----------------------------------------------------------//</span>
+
+<span class="literal">class</span> LabeledForExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        aa:
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 3; i++) {
+            bb:
+            <span class="literal">for</span> (<span class="literal">int</span> j = 1; j &lt;= 3; j++) {
+                <span class="literal">if</span> (i == 2 &amp;&amp; j == 2) {
+                    <span class="literal">break</span> aa;
+                }
+                System.<span class="ST1">out</span>.println(i + <span class="string">&quot;</span> <span class="string">&quot;</span> + j);
+            }
+        }
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> LabeledForExample2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        aa:
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 3; i++) {
+            bb:
+            <span class="literal">for</span> (<span class="literal">int</span> j = 1; j &lt;= 3; j++) {
+                <span class="literal">if</span> (i == 2 &amp;&amp; j == 2) {
+                    <span class="literal">break</span> bb;
+                }
+                System.<span class="ST1">out</span>.println(i + <span class="string">&quot;</span> <span class="string">&quot;</span> + j);
+            }
+        }
+    }
+}
+<span class="comment">//------------------------------------------------------//</span>
+
+<span class="literal">class</span> ForExample2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">for</span> (;;) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">infinitive loop</span><span class="string">&quot;</span>);
+        }
+    }
+}  <span class="comment">// Ctrl + C to exit in cmd</span>
+<span class="comment">//--------------------------------------------------//</span>
+
+<span class="literal">class</span> WhileExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> i = 1;
+        <span class="literal">while</span> (i &lt;= 10) {
+            System.<span class="ST1">out</span>.println(i);
+            i++;
+        }
+    }
+}
+<span class="comment">//--------------------------------------------------//</span>
+
+<span class="literal">class</span> WhileExample2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">while</span> (<span class="literal">true</span>) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">infinitive while loop</span><span class="string">&quot;</span>);
+        }
+    }
+}  <span class="comment">// Ctrl + C to exit in cmd</span>
+<span class="comment">//--------------------------------------------------//</span>
+
+<span class="literal">class</span> DoWhileExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> i = 1;
+        <span class="literal">do</span> {
+            System.<span class="ST1">out</span>.println(i);
+            i++;
+        } <span class="literal">while</span> (i &lt;= 10);
+    }
+}
+<span class="comment">//-----------------------------------------------------//</span>
+
+<span class="literal">class</span> DoWhileExample2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">do</span> {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">infinitive do while loop</span><span class="string">&quot;</span>);
+        } <span class="literal">while</span> (<span class="literal">true</span>);
+    }
+}
+<span class="comment">//--------------------------------------------------------//</span>
+
+<span class="literal">class</span> BreakExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 10; i++) {
+            <span class="literal">if</span> (i == 5) {
+                <span class="literal">break</span>;
+            }
+            System.<span class="ST1">out</span>.println(i);
+        }
+    }
+}
+<span class="comment">//--------------------------------------------------------//</span>
+
+<span class="literal">class</span> BreakExample2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 3; i++) {
+            <span class="literal">for</span> (<span class="literal">int</span> j = 1; j &lt;= 3; j++) {
+                <span class="literal">if</span> (i == 2 &amp;&amp; j == 2) {
+                    <span class="literal">break</span>;
+                }
+                System.<span class="ST1">out</span>.println(i + <span class="string">&quot;</span> <span class="string">&quot;</span> + j);
+            }
+        }
+    }
+}
+<span class="comment">//------------------------------------------------------------//</span>
+
+<span class="literal">class</span> ContinueExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 10; i++) {
+            <span class="literal">if</span> (i == 5) {
+                <span class="literal">continue</span>;
+            }
+            System.<span class="ST1">out</span>.println(i);
+        }
+    }
+}
+<span class="comment">//------------------------------------------------------------//</span>
+
+<span class="literal">class</span> ContinueExample2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= 3; i++) {
+            <span class="literal">for</span> (<span class="literal">int</span> j = 1; j &lt;= 3; j++) {
+                <span class="literal">if</span> (i == 2 &amp;&amp; j == 2) {
+                    <span class="literal">continue</span>;
+                }
+                System.<span class="ST1">out</span>.println(i + <span class="string">&quot;</span> <span class="string">&quot;</span> + j);
+            }
+        }
+    }
+}
+<span class="comment">//---------------------------------------------------------//</span>
+<span class="comment">//Fibonacci Series in Java without using recursion</span>
+
+<span class="literal">class</span> FibonacciExample1 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> n1 = 0, n2 = 1, n3, i, count = 10;
+        System.<span class="ST1">out</span>.print(n1 + <span class="string">&quot;</span> <span class="string">&quot;</span> + n2);<span class="comment">//printing 0 and 1    </span>
+
+        <span class="literal">for</span> (i = 2; i &lt; count; ++i)<span class="comment">//loop starts from 2 because 0 and 1 are already printed    </span>
+        {
+            n3 = n1 + n2;
+            System.<span class="ST1">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + n3);
+            n1 = n2;
+            n2 = n3;
+        }
+
+    }
+}
+<span class="comment">//---------------------------------------------------------------//</span>
+<span class="comment">//Fibonacci Series using recursion in java </span>
+
+<span class="literal">class</span> FibonacciExample2 {
+
+    <span class="literal">static</span> <span class="literal">int</span> <span class="ST1">n1</span> = 0, <span class="ST1">n2</span> = 1, <span class="ST1">n3</span> = 0;
+
+    <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">printFibonacci</span>(<span class="literal">int</span> count) {
+        <span class="literal">if</span> (count &gt; 0) {
+            <span class="ST1">n3</span> = <span class="ST1">n1</span> + <span class="ST1">n2</span>;
+            <span class="ST1">n1</span> = <span class="ST1">n2</span>;
+            <span class="ST1">n2</span> = <span class="ST1">n3</span>;
+            System.<span class="ST1">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST1">n3</span>);
+            <span class="ST0">printFibonacci</span>(count - 1);
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> count = 10;
+        System.<span class="ST1">out</span>.print(<span class="ST1">n1</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST1">n2</span>);<span class="comment">//printing 0 and 1    </span>
+        <span class="ST0">printFibonacci</span>(count - 2);<span class="comment">//n-2 because 2 numbers are already printed   </span>
+    }
+}
+<span class="comment">//-------------------------------------------------------------//</span>
+
+<span class="literal">class</span> PrimeExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> i, m = 0, flag = 0;
+        <span class="literal">int</span> n = 17;<span class="comment">//it is the number to be checked  </span>
+        m = n / 2;
+        <span class="literal">for</span> (i = 2; i &lt;= m; i++) {
+            <span class="literal">if</span> (n % i == 0) {
+                System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Number is not prime</span><span class="string">&quot;</span>);
+                flag = 1;
+                <span class="literal">break</span>;
+            }
+        }
+        <span class="literal">if</span> (flag == 0) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Number is prime</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//------------------------------------------------------------//</span>
+
+<span class="literal">class</span> PalindromeExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> r, sum = 0, temp;
+        <span class="literal">int</span> n = 454;<span class="comment">//It is the number variable to be checked for palindrome  </span>
+
+        temp = n;
+        <span class="literal">while</span> (n &gt; 0) {
+            r = n % 10;  <span class="comment">//getting remainder  </span>
+            sum = (sum * 10) + r;
+            n = n / 10;
+        }
+        <span class="literal">if</span> (temp == sum) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">palindrome number </span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">not palindrome</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//---------------------------------------------------------------//</span>
+
+<span class="literal">class</span> FactorialExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> i, fact = 1;
+        <span class="literal">int</span> number = 5;<span class="comment">//It is the number to calculate factorial    </span>
+        <span class="literal">for</span> (i = 1; i &lt;= number; i++) {
+            fact = fact * i;
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Factorial of </span><span class="string">&quot;</span> + number + <span class="string">&quot;</span><span class="string"> is: </span><span class="string">&quot;</span> + fact);
+    }
+}
+<span class="comment">//------------------------------------------------------------//</span>
+<span class="comment">//Factorial Program using recursion in java</span>
+
+<span class="literal">class</span> FactorialExample2 {
+
+    <span class="literal">static</span> <span class="literal">int</span> <span class="ST0">factorial</span>(<span class="literal">int</span> n) {
+        <span class="literal">if</span> (n == 0) {
+            <span class="literal">return</span> 1;
+        } <span class="literal">else</span> {
+            <span class="literal">return</span> (n * <span class="ST0">factorial</span>(n - 1));
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> i, fact = 1;  <span class="comment">// variable i is not used</span>
+        <span class="literal">int</span> number = 4;<span class="comment">//It is the number to calculate factorial    </span>
+        fact = <span class="ST0">factorial</span>(number);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Factorial of </span><span class="string">&quot;</span> + number + <span class="string">&quot;</span><span class="string"> is: </span><span class="string">&quot;</span> + fact);
+    }
+}
+<span class="comment">//----------------------------------------------------------------//</span>
+<span class="comment">/*</span>
+<span class="comment">    371 = (3*3*3)+(7*7*7)+(1*1*1)  </span>
+<span class="comment">    where:  </span>
+<span class="comment">    (3*3*3)=27  </span>
+<span class="comment">    (7*7*7)=343  </span>
+<span class="comment">    (1*1*1)=1  </span>
+<span class="comment">    So:  </span>
+<span class="comment">    27+343+1=371  </span>
+<span class="comment"> */</span>
+<span class="literal">class</span> ArmstrongExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> c = 0, a, temp;
+        <span class="literal">int</span> n = 153;<span class="comment">//It is the number to check armstrong  </span>
+        temp = n;
+        <span class="literal">while</span> (n &gt; 0) {
+            a = n % 10;
+            n = n / 10;
+            c = c + (a * a * a);
+        }
+        <span class="literal">if</span> (temp == c) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">armstrong number</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Not armstrong number</span><span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+<span class="comment">// Bubble Sort in Java</span>
+
+<span class="literal">class</span> BubbleSortExample {
+
+    <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">bubbleSort</span>(<span class="literal">int</span>[] arr) {
+        <span class="literal">int</span> n = arr.<span class="ST2">length</span>;
+        <span class="literal">int</span> temp = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; n; i++) {
+            <span class="literal">for</span> (<span class="literal">int</span> j = 1; j &lt; (n - i); j++) {
+                <span class="literal">if</span> (arr[j - 1] &gt; arr[j]) {
+                    <span class="comment">//swap elements  </span>
+                    temp = arr[j - 1];
+                    arr[j - 1] = arr[j];
+                    arr[j] = temp;
+                }
+
+            }
+        }
+
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">int</span> arr[] = {3, 60, 35, 2, 45, 320, 5};
+
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Array Before Bubble Sort</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; arr.<span class="ST2">length</span>; i++) {
+            System.<span class="ST1">out</span>.print(arr[i] + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+        System.<span class="ST1">out</span>.println();
+
+        <span class="ST0">bubbleSort</span>(arr);<span class="comment">//sorting array elements using bubble sort  </span>
+
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Array After Bubble Sort</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; arr.<span class="ST2">length</span>; i++) {
+            System.<span class="ST1">out</span>.print(arr[i] + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+
+    }
+}
+<span class="comment">//---------------------------------------------------------//</span>
+<span class="comment">// Selection Sort in Java</span>
+
+<span class="literal">class</span> SelectionSortExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">selectionSort</span>(<span class="literal">int</span>[] arr) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; arr.<span class="ST2">length</span> - 1; i++) {
+            <span class="literal">int</span> index = i;
+            <span class="literal">for</span> (<span class="literal">int</span> j = i + 1; j &lt; arr.<span class="ST2">length</span>; j++) {
+                <span class="literal">if</span> (arr[j] &lt; arr[index]) {
+                    index = j;<span class="comment">//searching for lowest index  </span>
+                }
+            }
+            <span class="literal">int</span> smallerNumber = arr[index];
+            arr[index] = arr[i];
+            arr[i] = smallerNumber;
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String a[]) {
+        <span class="literal">int</span>[] arr1 = {9, 14, 3, 2, 43, 11, 58, 22};
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Before Selection Sort</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i : arr1) {
+            System.<span class="ST1">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+        System.<span class="ST1">out</span>.println();
+
+        <span class="ST0">selectionSort</span>(arr1);<span class="comment">//sorting array using selection sort  </span>
+
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">After Selection Sort</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i : arr1) {
+            System.<span class="ST1">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//--------------------------------------------------------//</span>
+<span class="comment">//Insertion Sort in Java</span>
+
+<span class="literal">class</span> InsertionSortExample {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">insertionSort</span>(<span class="literal">int</span> array[]) {
+        <span class="literal">int</span> n = array.<span class="ST2">length</span>;
+        <span class="literal">for</span> (<span class="literal">int</span> j = 1; j &lt; n; j++) {
+            <span class="literal">int</span> key = array[j];
+            <span class="literal">int</span> i = j - 1;
+            <span class="literal">while</span> ((i &gt; -1) &amp;&amp; (array[i] &gt; key)) {
+                array[i + 1] = array[i];
+                i--;
+            }
+            array[i + 1] = key;
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String a[]) {
+        <span class="literal">int</span>[] arr1 = {9, 14, 3, 2, 43, 11, 58, 22};
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Before Insertion Sort</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i : arr1) {
+            System.<span class="ST1">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+        System.<span class="ST1">out</span>.println();
+
+        <span class="ST0">insertionSort</span>(arr1);<span class="comment">//sorting array using insertion sort    </span>
+
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">After Insertion Sort</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i : arr1) {
+            System.<span class="ST1">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+    }
+}
+<span class="comment">//---------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;<span class="comment">//field or data member or instance variable  </span>
+    String <span class="ST2">name</span>;
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> Student();<span class="comment">//creating an object of Student  </span>
+        System.<span class="ST1">out</span>.println(s1.<span class="ST2">id</span>);<span class="comment">//accessing member through reference variable  </span>
+        System.<span class="ST1">out</span>.println(s1.<span class="ST2">name</span>);
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+}
+
+<span class="literal">class</span> TestStudent1 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> Student();
+        System.<span class="ST1">out</span>.println(s1.<span class="ST2">id</span>);
+        System.<span class="ST1">out</span>.println(s1.<span class="ST2">name</span>);
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+}
+
+<span class="literal">class</span> TestStudent2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> Student();
+        s1.<span class="ST2">id</span> = 101;
+        s1.<span class="ST2">name</span> = <span class="string">&quot;</span><span class="string">Sonoo</span><span class="string">&quot;</span>;
+        System.<span class="ST1">out</span>.println(s1.<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + s1.<span class="ST2">name</span>);<span class="comment">//printing members with a white space  </span>
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+}
+
+<span class="literal">class</span> TestStudent3 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="comment">//Creating objects  </span>
+        Student s1 = <span class="literal">new</span> Student();
+        Student s2 = <span class="literal">new</span> Student();
+        <span class="comment">//Initializing objects  </span>
+        s1.<span class="ST2">id</span> = 101;
+        s1.<span class="ST2">name</span> = <span class="string">&quot;</span><span class="string">Sonoo</span><span class="string">&quot;</span>;
+        s2.<span class="ST2">id</span> = 102;
+        s2.<span class="ST2">name</span> = <span class="string">&quot;</span><span class="string">Amit</span><span class="string">&quot;</span>;
+        <span class="comment">//Printing data  </span>
+        System.<span class="ST1">out</span>.println(s1.<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + s1.<span class="ST2">name</span>);
+        System.<span class="ST1">out</span>.println(s2.<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + s2.<span class="ST2">name</span>);
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>;
+
+    <span class="literal">void</span> insertRecord(<span class="literal">int</span> r, String n) {
+        <span class="ST2">rollno</span> = r;
+        <span class="ST2">name</span> = n;
+    }
+
+    <span class="literal">void</span> displayInformation() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span>);
+    }
+}
+
+<span class="literal">class</span> TestStudent4 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> Student();
+        Student s2 = <span class="literal">new</span> Student();
+        s1.<span class="ST0">insertRecord</span>(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        s2.<span class="ST0">insertRecord</span>(222, <span class="string">&quot;</span><span class="string">Aryan</span><span class="string">&quot;</span>);
+        s1.<span class="ST0">displayInformation</span>();
+        s2.<span class="ST0">displayInformation</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Employee {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">float</span> <span class="ST2">salary</span>;
+
+    <span class="literal">void</span> insert(<span class="literal">int</span> i, String n, <span class="literal">float</span> s) {
+        <span class="ST2">id</span> = i;
+        <span class="ST2">name</span> = n;
+        <span class="ST2">salary</span> = s;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">salary</span>);
+    }
+}
+
+<span class="literal">public</span> <span class="literal">class</span> TestEmployee {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        Employee e1 = <span class="literal">new</span> Employee();
+        Employee e2 = <span class="literal">new</span> Employee();
+        Employee e3 = <span class="literal">new</span> Employee();
+        e1.insert(101, <span class="string">&quot;</span><span class="string">ajeet</span><span class="string">&quot;</span>, 45000);
+        e2.insert(102, <span class="string">&quot;</span><span class="string">irfan</span><span class="string">&quot;</span>, 25000);
+        e3.insert(103, <span class="string">&quot;</span><span class="string">nakul</span><span class="string">&quot;</span>, 55000);
+        e1.display();
+        e2.display();
+        e3.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Rectangle {
+
+    <span class="literal">int</span> <span class="ST2">length</span>;
+    <span class="literal">int</span> <span class="ST2">width</span>;
+
+    <span class="literal">void</span> insert(<span class="literal">int</span> l, <span class="literal">int</span> w) {
+        <span class="ST2">length</span> = l;
+        <span class="ST2">width</span> = w;
+    }
+
+    <span class="literal">void</span> calculateArea() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">length</span> * <span class="ST2">width</span>);
+    }
+}
+
+<span class="literal">class</span> TestRectangle1 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Rectangle r1 = <span class="literal">new</span> Rectangle();
+        Rectangle r2 = <span class="literal">new</span> Rectangle();
+        r1.insert(11, 5);
+        r2.insert(3, 15);
+        r1.calculateArea();
+        r2.calculateArea();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Calculation {
+
+    <span class="literal">void</span> fact(<span class="literal">int</span> n) {
+        <span class="literal">int</span> fact = 1;
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt;= n; i++) {
+            fact = fact * i;
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">factorial is </span><span class="string">&quot;</span> + fact);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">new</span> Calculation().fact(5);<span class="comment">//calling method with anonymous object  </span>
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Rectangle {
+
+    <span class="literal">int</span> <span class="ST2">length</span>;
+    <span class="literal">int</span> <span class="ST2">width</span>;
+
+    <span class="literal">void</span> insert(<span class="literal">int</span> l, <span class="literal">int</span> w) {
+        <span class="ST2">length</span> = l;
+        <span class="ST2">width</span> = w;
+    }
+
+    <span class="literal">void</span> calculateArea() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">length</span> * <span class="ST2">width</span>);
+    }
+}
+
+<span class="literal">class</span> TestRectangle2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Rectangle r1 = <span class="literal">new</span> Rectangle(), r2 = <span class="literal">new</span> Rectangle();<span class="comment">//creating two objects  </span>
+        r1.insert(11, 5);
+        r2.insert(3, 15);
+        r1.calculateArea();
+        r2.calculateArea();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Account {
+
+    <span class="literal">int</span> <span class="ST2">acc_no</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">float</span> <span class="ST2">amount</span>;
+
+    <span class="literal">void</span> insert(<span class="literal">int</span> a, String n, <span class="literal">float</span> amt) {
+        <span class="ST2">acc_no</span> = a;
+        <span class="ST2">name</span> = n;
+        <span class="ST2">amount</span> = amt;
+    }
+
+    <span class="literal">void</span> deposit(<span class="literal">float</span> amt) {
+        <span class="ST2">amount</span> = <span class="ST2">amount</span> + amt;
+        System.<span class="ST1">out</span>.println(amt + <span class="string">&quot;</span><span class="string"> deposited</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">void</span> withdraw(<span class="literal">float</span> amt) {
+        <span class="literal">if</span> (<span class="ST2">amount</span> &lt; amt) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Insufficient Balance</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            <span class="ST2">amount</span> = <span class="ST2">amount</span> - amt;
+            System.<span class="ST1">out</span>.println(amt + <span class="string">&quot;</span><span class="string"> withdrawn</span><span class="string">&quot;</span>);
+        }
+    }
+
+    <span class="literal">void</span> checkBalance() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Balance is: </span><span class="string">&quot;</span> + <span class="ST2">amount</span>);
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">acc_no</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">amount</span>);
+    }
+}
+
+<span class="literal">class</span> TestAccount {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        Account a1 = <span class="literal">new</span> Account();
+        a1.insert(832345, <span class="string">&quot;</span><span class="string">Ankit</span><span class="string">&quot;</span>, 1000);
+        a1.display();
+        a1.checkBalance();
+        a1.deposit(40000);
+        a1.checkBalance();
+        a1.withdraw(15000);
+        a1.checkBalance();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Bike1 {
+
+    Bike1() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Bike is created</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Bike1 b = <span class="literal">new</span> Bike1();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student3 {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student3 s1 = <span class="literal">new</span> Student3();
+        Student3 s2 = <span class="literal">new</span> Student3();
+        s1.display();
+        s2.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student4 {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+
+    Student4(<span class="literal">int</span> i, String n) {
+        <span class="ST2">id</span> = i;
+        <span class="ST2">name</span> = n;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student4 s1 = <span class="literal">new</span> Student4(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        Student4 s2 = <span class="literal">new</span> Student4(222, <span class="string">&quot;</span><span class="string">Aryan</span><span class="string">&quot;</span>);
+        s1.display();
+        s2.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student5 {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">int</span> <span class="ST2">age</span>;
+
+    Student5(<span class="literal">int</span> i, String n) {
+        <span class="ST2">id</span> = i;
+        <span class="ST2">name</span> = n;
+    }
+
+    Student5(<span class="literal">int</span> i, String n, <span class="literal">int</span> a) {
+        <span class="ST2">id</span> = i;
+        <span class="ST2">name</span> = n;
+        <span class="ST2">age</span> = a;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">age</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student5 s1 = <span class="literal">new</span> Student5(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        Student5 s2 = <span class="literal">new</span> Student5(222, <span class="string">&quot;</span><span class="string">Aryan</span><span class="string">&quot;</span>, 25);
+        s1.display();
+        s2.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student6 {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+
+    Student6(<span class="literal">int</span> i, String n) {
+        <span class="ST2">id</span> = i;
+        <span class="ST2">name</span> = n;
+    }
+
+    Student6(Student6 s) {
+        <span class="ST2">id</span> = s.<span class="ST2">id</span>;
+        <span class="ST2">name</span> = s.<span class="ST2">name</span>;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student6 s1 = <span class="literal">new</span> Student6(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        Student6 s2 = <span class="literal">new</span> Student6(s1);
+        s1.display();
+        s2.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student7 {
+
+    <span class="literal">int</span> <span class="ST2">id</span>;
+    String <span class="ST2">name</span>;
+
+    Student7(<span class="literal">int</span> i, String n) {
+        <span class="ST2">id</span> = i;
+        <span class="ST2">name</span> = n;
+    }
+
+    Student7() {
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">id</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student7 s1 = <span class="literal">new</span> Student7(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        Student7 s2 = <span class="literal">new</span> Student7();
+        s2.<span class="ST2">id</span> = s1.<span class="ST2">id</span>;
+        s2.<span class="ST2">name</span> = s1.<span class="ST2">name</span>;
+        s1.display();
+        s2.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student8 {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">static</span> String <span class="ST1">college</span> = <span class="string">&quot;</span><span class="string">ITS</span><span class="string">&quot;</span>;
+
+    Student8(<span class="literal">int</span> r, String n) {
+        <span class="ST2">rollno</span> = r;
+        <span class="ST2">name</span> = n;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST1">college</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student8 s1 = <span class="literal">new</span> Student8(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        Student8 s2 = <span class="literal">new</span> Student8(222, <span class="string">&quot;</span><span class="string">Aryan</span><span class="string">&quot;</span>);
+
+        s1.display();
+        s2.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Counter {
+
+    <span class="literal">int</span> <span class="ST2">count</span> = 0;<span class="comment">//will get memory when instance is created  </span>
+
+    Counter() {
+        <span class="ST2">count</span>++;
+        System.<span class="ST1">out</span>.println(<span class="ST2">count</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        Counter c1 = <span class="literal">new</span> Counter();
+        Counter c2 = <span class="literal">new</span> Counter();
+        Counter c3 = <span class="literal">new</span> Counter();
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Counter2 {
+
+    <span class="literal">static</span> <span class="literal">int</span> <span class="ST1">count</span> = 0;<span class="comment">//will get memory only once and retain its value  </span>
+
+    Counter2() {
+        <span class="ST1">count</span>++;
+        System.<span class="ST1">out</span>.println(<span class="ST1">count</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        Counter2 c1 = <span class="literal">new</span> Counter2();
+        Counter2 c2 = <span class="literal">new</span> Counter2();
+        Counter2 c3 = <span class="literal">new</span> Counter2();
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student9 {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">static</span> String <span class="ST1">college</span> = <span class="string">&quot;</span><span class="string">ITS</span><span class="string">&quot;</span>;
+
+    <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">change</span>() {
+        <span class="ST1">college</span> = <span class="string">&quot;</span><span class="string">BBDIT</span><span class="string">&quot;</span>;
+    }
+
+    Student9(<span class="literal">int</span> r, String n) {
+        <span class="ST2">rollno</span> = r;
+        <span class="ST2">name</span> = n;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST1">college</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student9.<span class="ST0">change</span>();
+
+        Student9 s1 = <span class="literal">new</span> Student9(111, <span class="string">&quot;</span><span class="string">Karan</span><span class="string">&quot;</span>);
+        Student9 s2 = <span class="literal">new</span> Student9(222, <span class="string">&quot;</span><span class="string">Aryan</span><span class="string">&quot;</span>);
+        Student9 s3 = <span class="literal">new</span> Student9(333, <span class="string">&quot;</span><span class="string">Sonoo</span><span class="string">&quot;</span>);
+
+        s1.display();
+        s2.display();
+        s3.display();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Calculate {
+
+    <span class="literal">static</span> <span class="literal">int</span> <span class="ST0">cube</span>(<span class="literal">int</span> x) {
+        <span class="literal">return</span> x * x * x;
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">int</span> result = Calculate.<span class="ST0">cube</span>(5);
+        System.<span class="ST1">out</span>.println(result);
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">float</span> <span class="ST2">fee</span>;
+
+    Student(<span class="literal">int</span> rollno, String name, <span class="literal">float</span> fee) {
+        rollno = rollno;
+        name = name;
+        fee = fee;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">fee</span>);
+    }
+}
+
+<span class="literal">class</span> TestThis1 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> <span class="ST0">Student</span>(111, <span class="string">&quot;</span><span class="string">ankit</span><span class="string">&quot;</span>, 5000f);
+        Student s2 = <span class="literal">new</span> <span class="ST0">Student</span>(112, <span class="string">&quot;</span><span class="string">sumit</span><span class="string">&quot;</span>, 6000f);
+        s1.<span class="ST0">display</span>();
+        s2.<span class="ST0">display</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">float</span> <span class="ST2">fee</span>;
+
+    Student(<span class="literal">int</span> rollno, String name, <span class="literal">float</span> fee) {
+        <span class="literal">this</span>.<span class="ST0">rollno</span> = rollno;
+        <span class="literal">this</span>.<span class="ST0">name</span> = name;
+        <span class="literal">this</span>.<span class="ST0">fee</span> = fee;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">fee</span>);
+    }
+}
+
+<span class="literal">class</span> TestThis2 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> <span class="ST0">Student</span>(111, <span class="string">&quot;</span><span class="string">ankit</span><span class="string">&quot;</span>, 5000f);
+        Student s2 = <span class="literal">new</span> <span class="ST0">Student</span>(112, <span class="string">&quot;</span><span class="string">sumit</span><span class="string">&quot;</span>, 6000f);
+        s1.<span class="ST0">display</span>();
+        s2.<span class="ST0">display</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>;
+    <span class="literal">float</span> <span class="ST2">fee</span>;
+
+    Student(<span class="literal">int</span> r, String n, <span class="literal">float</span> f) {
+        <span class="ST2">rollno</span> = r;
+        <span class="ST2">name</span> = n;
+        <span class="ST2">fee</span> = f;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">fee</span>);
+    }
+}
+
+<span class="literal">class</span> TestThis3 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> <span class="ST0">Student</span>(111, <span class="string">&quot;</span><span class="string">ankit</span><span class="string">&quot;</span>, 5000f);
+        Student s2 = <span class="literal">new</span> <span class="ST0">Student</span>(112, <span class="string">&quot;</span><span class="string">sumit</span><span class="string">&quot;</span>, 6000f);
+        s1.<span class="ST0">display</span>();
+        s2.<span class="ST0">display</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> A {
+
+    <span class="literal">void</span> m() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">hello m</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">void</span> n() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">hello n</span><span class="string">&quot;</span>);
+        <span class="comment">//m();//same as this.m()  </span>
+        <span class="literal">this</span>.m();
+    }
+}
+
+<span class="literal">class</span> TestThis4 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        A a = <span class="literal">new</span> A();
+        a.n();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> A {
+
+    A() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">hello a</span><span class="string">&quot;</span>);
+    }
+
+    A(<span class="literal">int</span> x) {
+        <span class="literal">this</span>();
+        System.<span class="ST1">out</span>.println(x);
+    }
+}
+
+<span class="literal">class</span> TestThis5 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        A a = <span class="literal">new</span> <span class="ST0">A</span>(10);
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> A {
+
+    A() {
+        <span class="literal">this</span>(5);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">hello a</span><span class="string">&quot;</span>);
+    }
+
+    A(<span class="literal">int</span> x) {
+        System.<span class="ST1">out</span>.println(x);
+    }
+}
+
+<span class="literal">class</span> TestThis6 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        A a = <span class="literal">new</span> A();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>, <span class="ST2">course</span>;
+    <span class="literal">float</span> <span class="ST2">fee</span>;
+
+    Student(<span class="literal">int</span> rollno, String name, String course) {
+        <span class="literal">this</span>.<span class="ST0">rollno</span> = rollno;
+        <span class="literal">this</span>.<span class="ST0">name</span> = name;
+        <span class="literal">this</span>.<span class="ST0">course</span> = course;
+    }
+
+    Student(<span class="literal">int</span> rollno, String name, String course, <span class="literal">float</span> fee) {
+        <span class="literal">this</span>(rollno, name, course);<span class="comment">//reusing constructor  </span>
+        <span class="literal">this</span>.<span class="ST0">fee</span> = fee;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">course</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">fee</span>);
+    }
+}
+
+<span class="literal">class</span> TestThis7 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> <span class="ST0">Student</span>(111, <span class="string">&quot;</span><span class="string">ankit</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">java</span><span class="string">&quot;</span>);
+        Student s2 = <span class="literal">new</span> <span class="ST0">Student</span>(112, <span class="string">&quot;</span><span class="string">sumit</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">java</span><span class="string">&quot;</span>, 6000f);
+        s1.<span class="ST0">display</span>();
+        s2.<span class="ST0">display</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Student {
+
+    <span class="literal">int</span> <span class="ST2">rollno</span>;
+    String <span class="ST2">name</span>, <span class="ST2">course</span>;
+    <span class="literal">float</span> <span class="ST2">fee</span>;
+
+    Student(<span class="literal">int</span> rollno, String name, String course) {
+        <span class="literal">this</span>.<span class="ST0">rollno</span> = rollno;
+        <span class="literal">this</span>.<span class="ST0">name</span> = name;
+        <span class="literal">this</span>.<span class="ST0">course</span> = course;
+    }
+
+    Student(<span class="literal">int</span> rollno, String name, String course, <span class="literal">float</span> fee) {
+        <span class="literal">this</span>.<span class="ST0">fee</span> = fee;
+        <span class="literal">this</span>(rollno, name, course);<span class="comment">//C.T.Error  </span>
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">rollno</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">name</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">course</span> + <span class="string">&quot;</span> <span class="string">&quot;</span> + <span class="ST2">fee</span>);
+    }
+}
+
+<span class="literal">class</span> TestThis8 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        Student s1 = <span class="literal">new</span> <span class="ST0">Student</span>(111, <span class="string">&quot;</span><span class="string">ankit</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">java</span><span class="string">&quot;</span>);
+        Student s2 = <span class="literal">new</span> <span class="ST0">Student</span>(112, <span class="string">&quot;</span><span class="string">sumit</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">java</span><span class="string">&quot;</span>, 6000f);
+        s1.<span class="ST0">display</span>();
+        s2.<span class="ST0">display</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> S2 {
+
+    <span class="literal">void</span> m(S2 obj) {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">method is invoked</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">void</span> p() {
+        m(<span class="literal">this</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        S2 s1 = <span class="literal">new</span> S2();
+        s1.p();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> B {
+
+    A4 <span class="ST2">obj</span>;
+
+    B(A4 obj) {
+        <span class="literal">this</span>.<span class="ST2">obj</span> = obj;
+    }
+
+    <span class="literal">void</span> display() {
+        System.<span class="ST1">out</span>.println(<span class="ST2">obj</span>.<span class="ST2">data</span>);<span class="comment">//using data member of A4 class  </span>
+    }
+}
+
+<span class="literal">class</span> A4 {
+
+    <span class="literal">int</span> <span class="ST2">data</span> = 10;
+
+    A4() {
+        B b = <span class="literal">new</span> B(<span class="literal">this</span>);
+        b.display();
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        A4 a = <span class="literal">new</span> A4();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> A {
+
+    A getA() {
+        <span class="literal">return</span> <span class="literal">this</span>;
+    }
+
+    <span class="literal">void</span> msg() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Hello java</span><span class="string">&quot;</span>);
+    }
+}
+
+<span class="literal">class</span> Test1 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="literal">new</span> A().<span class="ST0">getA</span>().<span class="ST0">msg</span>();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> A5 {
+
+    <span class="literal">void</span> m() {
+        System.<span class="ST1">out</span>.println(<span class="literal">this</span>);<span class="comment">//prints same reference ID  </span>
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        A5 obj = <span class="literal">new</span> A5();
+        System.<span class="ST1">out</span>.println(obj);<span class="comment">//prints the reference ID  </span>
+        obj.m();
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Testarray {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        <span class="literal">int</span> a[] = <span class="literal">new</span> <span class="literal">int</span>[5];<span class="comment">//declaration and instantiation  </span>
+        a[0] = 10;<span class="comment">//initialization  </span>
+        a[1] = 20;
+        a[2] = 70;
+        a[3] = 40;
+        a[4] = 50;
+
+        <span class="comment">//printing array  </span>
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; a.<span class="ST2">length</span>; i++)<span class="comment">//length is the property of array  </span>
+        {
+            System.<span class="ST1">out</span>.println(a[i]);
+        }
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Testarray1 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        <span class="literal">int</span> a[] = {33, 3, 4, 5};<span class="comment">//declaration, instantiation and initialization  </span>
+
+        <span class="comment">//printing array  </span>
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; a.<span class="ST2">length</span>; i++)<span class="comment">//length is the property of array  </span>
+        {
+            System.<span class="ST1">out</span>.println(a[i]);
+        }
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Testarray2 {
+
+    <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">min</span>(<span class="literal">int</span> arr[]) {
+        <span class="literal">int</span> min = arr[0];
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt; arr.<span class="ST2">length</span>; i++) {
+            <span class="literal">if</span> (min &gt; arr[i]) {
+                min = arr[i];
+            }
+        }
+
+        System.<span class="ST1">out</span>.println(min);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        <span class="literal">int</span> a[] = {33, 3, 4, 5};
+        <span class="ST0">min</span>(a);<span class="comment">//passing array to method  </span>
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Testarray3 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        <span class="comment">//declaring and initializing 2D array  </span>
+        <span class="literal">int</span> arr[][] = {{1, 2, 3}, {2, 4, 5}, {4, 4, 5}};
+
+        <span class="comment">//printing 2D array  </span>
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; 3; i++) {
+            <span class="literal">for</span> (<span class="literal">int</span> j = 0; j &lt; 3; j++) {
+                System.<span class="ST1">out</span>.print(arr[i][j] + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+            }
+            System.<span class="ST1">out</span>.println();
+        }
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Testarray4 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+
+        <span class="literal">int</span> arr[] = {4, 4, 5};
+
+        Class c = arr.getClass();
+        String name = c.getName();
+
+        System.<span class="ST1">out</span>.println(name);
+
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> TestArrayCopyDemo {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String[] args) {
+        <span class="literal">char</span>[] copyFrom = {<span class="string">&#39;</span><span class="string">d</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">e</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">c</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">a</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">f</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">f</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">e</span><span class="string">&#39;</span>,
+            <span class="string">&#39;</span><span class="string">i</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">n</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">a</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">t</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">e</span><span class="string">&#39;</span>, <span class="string">&#39;</span><span class="string">d</span><span class="string">&#39;</span>};
+        <span class="literal">char</span>[] copyTo = <span class="literal">new</span> <span class="literal">char</span>[7];
+
+        System.<span class="ST0">arraycopy</span>(copyFrom, 2, copyTo, 0, 7);
+        System.<span class="ST1">out</span>.println(<span class="literal">new</span> String(copyTo));
+    }
+}
+<span class="comment">//-------------------------------------------------------//</span>
+
+<span class="literal">class</span> Testarray5 {
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST0">main</span>(String args[]) {
+        <span class="comment">//creating two matrices  </span>
+        <span class="literal">int</span> a[][] = {{1, 3, 4}, {3, 4, 5}};
+        <span class="literal">int</span> b[][] = {{1, 3, 4}, {3, 4, 5}};
+
+        <span class="comment">//creating another matrix to store the sum of two matrices  </span>
+        <span class="literal">int</span> c[][] = <span class="literal">new</span> <span class="literal">int</span>[2][3];
+
+        <span class="comment">//adding and printing addition of 2 matrices  </span>
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; 2; i++) {
+            <span class="literal">for</span> (<span class="literal">int</span> j = 0; j &lt; 3; j++) {
+                c[i][j] = a[i][j] + b[i][j];
+                System.<span class="ST1">out</span>.print(c[i][j] + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+            }
+            System.<span class="ST1">out</span>.println();<span class="comment">//new line  </span>
+        }
+
+    }
+}  
+//-------------------------------------------------------//
+</pre></body>
+</html>
