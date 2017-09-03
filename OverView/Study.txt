@@ -31,14 +31,36 @@ Chapter: Java Polymorphism
 		- instanceof operator
 
 Chapter: Java Abstraction
+		- Abstract class
+		- Interface
 
 Chapter: Java Encapsulation
 
 Chapter: Java Array
 		- Java Array 
 		
-Chapter: Java String 
-
+Chapter: Java String
+		- String charAt()
+		- String concat()
+		- String equals()
+		- String equalsIgnoreCase()
+		- String indexOf()
+		- String lastIndexOf()
+		- String isEmpty()
+		- String join()
+		- String length()
+		- String replace()
+		- String split()
+		- String startsWith()
+		- String substring()
+		- String toLowerCase()
+		- String toUpperCase()
+		- String trim()
+		- String valueOf()
+		
+Chapter: Java Regex
+		- Java Regex API
+		
 Chapter: Exception Handling
 		- try and catch block
 		- Multiple catch block
@@ -47,4 +69,12 @@ Chapter: Exception Handling
 		- throw keyword
 		- throws keyword 
 
-Chapter: Java Programs		
+Chapter: Java Programs
+		- Fibonacci series
+		- Prime number
+		- Palindrome number
+		- Factorial number 
+		- Armstrong number 
+		- Bubble sort
+		- Selection sort 
+		- Insertion sort 
