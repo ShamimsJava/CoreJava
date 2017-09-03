@@ -1,0 +1,50 @@
+https://www.javatpoint.com/java-tutorial
+
+Chapter: Java Tutorial
+		- Variable and Data Type
+		- Operators
+
+Chapter: Control Statements
+		- Java If-else
+		- Java Switch
+		- Java For Loop
+		- Java While Loop
+		- Java Do While Loop 
+		- Java Break
+		- Java Continue
+		
+Chapter: Java Object Class
+		- Object and Class
+		- Constructor
+		- static keyword
+		- this keyword
+		
+Chapter: Java Inheritance
+		- Inheritance (IS-A)
+		- Aggregation (HAS-A)
+
+Chapter: Java Polymorphism
+		- Method Overloading
+		- Method Overriding
+		- super keyword
+		- final keyword
+		- instanceof operator
+
+Chapter: Java Abstraction
+
+Chapter: Java Encapsulation
+
+Chapter: Java Array
+		- Java Array 
+		
+Chapter: Java String 
+
+Chapter: Exception Handling
+		- try and catch block
+		- Multiple catch block
+		- Nested try
+		- finally block
+		- throw keyword
+		- throws keyword 
+
+Chapter: Java Programs		
