@@ -15,6 +15,5 @@ public class App {
         balance.setCashOut(sc.nextDouble());
         balance.balance = balance.getBalance() + balance.getCashIn() - balance.getCashOut();
         System.out.println("New Balance is: " + balance.balance);
-
     }
 }
